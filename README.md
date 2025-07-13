@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mouhcine03/bento-grid.git)
-- Live Site URL: [Add live site URL here](https://mouhcine03.github.io/bento-grid)
+- Solution URL: [solution repository](https://github.com/mouhcine03/bento-grid.git)
+- Live Site URL: [ live site URL here](https://mouhcine03.github.io/bento-grid)
 
 ## My process
 
