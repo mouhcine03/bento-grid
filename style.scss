@@ -1,19 +1,17 @@
 body,html{
     width: 100%;
-}
-body{
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family:'DM Sans' ;
-    line-height: 0.92;
-    letter-spacing: -5px;
-   
-    
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'DM Sans';
+        line-height: 0.92;
+        letter-spacing: -5px;
+        margin: 0;
+        padding: 10px;
 }
+
 .container{
     display: grid;
     grid-template-columns: 350px 400px 400px 350px;
@@ -25,6 +23,9 @@ body{
     "four five seven three"
     "four six eight eight" 
    ;
+    max-width: 1500px;
+        width: 100%;
+        margin: 0 auto;
 
   
 }
@@ -203,7 +204,7 @@ body{
     letter-spacing: normal;
     font-size: 1rem;
 }
-@media (max-width :375px ) {
+@media (max-width: 375px ) {
    
     .container{
         display: flex;
