@@ -1,0 +1,188 @@
+body, html {
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans";
+  line-height: 0.92;
+  letter-spacing: -5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 400px 400px 350px;
+  grid-template-rows: 450px 60px 210px 270px;
+  gap: 30px;
+  grid-template-areas: "one two two three" "one five seven three" "four five seven three" "four six eight eight";
+}
+
+.box {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.box.one {
+  grid-area: one;
+  background-color: hsl(31, 66%, 93%);
+}
+.box.one .title {
+  color: hsl(0, 0%, 7%);
+  font-size: 55px;
+  font-weight: 500;
+  margin-left: 45px;
+}
+.box.one img {
+  width: 260px;
+  margin-top: 20px;
+}
+
+.box.two {
+  grid-area: two;
+  background-color: hsl(256, 67%, 59%);
+  letter-spacing: normal;
+}
+.box.two .title {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  margin-left: 45px;
+  margin-right: 45px;
+  text-align: center;
+}
+.box.two .paragraphe {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.box.two img {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 215px;
+}
+
+.box.three {
+  grid-area: three;
+  overflow: hidden;
+  background-color: hsl(254, 88%, 90%);
+}
+.box.three .title {
+  font-size: 50px;
+  margin: 50px 50px 30px 50px;
+  letter-spacing: -5px;
+  font-weight: 500;
+  line-height: 0.9;
+}
+.box.three img {
+  width: 500px;
+  height: 400px;
+  margin-left: 250px;
+}
+.box.three .paragraphe {
+  font-size: 22px;
+  letter-spacing: normal;
+  margin: 50px 50px 30px 50px;
+}
+
+.box.four {
+  grid-area: four;
+  background-color: hsl(39, 100%, 71%);
+}
+.box.four .title {
+  font-size: 50px;
+  margin: 25px 50px 30px 25px;
+  font-weight: 500;
+}
+.box.four img {
+  width: 300px;
+}
+
+.box.five {
+  grid-area: five;
+  overflow: hidden;
+  align-items: flex-start;
+  background-color: hsl(0, 0%, 96%);
+}
+.box.five .title {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.box.five img {
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.box.six {
+  grid-area: six;
+  background-color: hsl(0, 0%, 96%);
+  align-items: flex-start;
+}
+.box.six .title {
+  font-size: 20px;
+  letter-spacing: normal;
+  margin: 20px 20px 0px 50px;
+}
+.box.six span {
+  margin: 30px auto 0px 50px;
+  font-size: 75px;
+}
+.box.six img {
+  margin: 30px 30px 30px 50px;
+  width: 280px;
+}
+
+.box.seven {
+  grid-area: seven;
+  background-color: hsl(39, 100%, 71%);
+  overflow: hidden;
+}
+.box.seven .title {
+  font-size: 47px;
+  font-weight: 500;
+  margin: 120px 40px 20px 40px;
+}
+.box.seven img {
+  width: 320px;
+}
+
+.box.eight {
+  grid-area: eight;
+  background-color: hsl(256, 67%, 59%);
+  flex-direction: row-reverse;
+  letter-spacing: normal;
+}
+.box.eight .title {
+  font-size: 50px;
+  margin-left: 50px;
+  color: white;
+  font-weight: 500;
+}
+.box.eight img {
+  margin: 20px;
+  width: 250px;
+}
+
+.attribution {
+  letter-spacing: normal;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=style.css.map */
